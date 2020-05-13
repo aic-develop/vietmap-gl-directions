@@ -21,38 +21,31 @@
   </div>
 
   <% if (controls.profileSwitcher) { %>
-  <div class='mapbox-directions-profile mapbox-directions-component-keyline mapbox-directions-clearfix'><input
-      id='mapbox-directions-profile-driving-traffic'
-      type='radio'
-      name='profile'
-      value='mapbox/driving-traffic'
-      <% if (profile === 'mapbox/driving-traffic') { %>checked<% } %>
-    />
-    <label for='mapbox-directions-profile-driving-traffic'>Traffic</label>
+  <div class='mapbox-directions-profile mapbox-directions-component-keyline mapbox-directions-clearfix'>
     <input
       id='mapbox-directions-profile-driving'
       type='radio'
       name='profile'
-      value='mapbox/driving'
-      <% if (profile === 'mapbox/driving') { %>checked<% } %>
+      value='driving'
+      <% if (profile === 'driving') { %>checked<% } %>
     />
-    <label for='mapbox-directions-profile-driving'>Driving</label>
+    <label for='mapbox-directions-profile-driving'>Lái xe</label>
     <input
       id='mapbox-directions-profile-walking'
       type='radio'
       name='profile'
-      value='mapbox/walking'
-      <% if (profile === 'mapbox/walking') { %>checked<% } %>
+      value='walking'
+      <% if (profile === 'walking') { %>checked<% } %>
     />
-    <label for='mapbox-directions-profile-walking'>Walking</label>
+    <label for='mapbox-directions-profile-walking'>Đi bộ</label>
     <input
       id='mapbox-directions-profile-cycling'
       type='radio'
       name='profile'
-      value='mapbox/cycling'
-      <% if (profile === 'mapbox/cycling') { %>checked<% } %>
+      value='cycling'
+      <% if (profile === 'cycling') { %>checked<% } %>
     />
-    <label for='mapbox-directions-profile-cycling'>Cycling</label>
+    <label for='mapbox-directions-profile-cycling'>Đạp xe</label>
   </div>
   <% } %>
 </div>
