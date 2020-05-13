@@ -1,7 +1,7 @@
 {
-  "name": "vietmap-gl-directions",
-  "version": "1.0.3",
-  "description": "A mapboxgl plugin for the Mapbox Directions API",
+  "name": "vietmaps-gl-directions",
+  "version": "1.0.0",
+  "description": "A vietmapgl plugin for the VietMap Directions API",
   "main": "./src/index.js",
   "browserify": {
     "transform": [
@@ -15,14 +15,14 @@
   "scripts": {
     "prepublish": "npm run build",
     "start": "NODE_ENV=development budo example/index.js:example/bundle.js --live",
-    "build": "NODE_ENV=production mkdir -p dist && browserify -s MapboxDirections src/index.js > dist/mapbox-gl-directions.js && cp src/mapbox-gl-directions.css dist",
+    "build": "NODE_ENV=production mkdir -p dist && browserify -s MapboxDirections src/index.js > dist/vietmap-gl-directions.js && cp src/vietmap-gl-directions.css dist",
     "test": "NODE_ENV=test npm run lint && browserify test/index.js | smokestack -b firefox | tap-status",
     "docs": "documentation build src/directions.js --shallow --format=md > API.md",
     "lint": "eslint --no-eslintrc -c .eslintrc src"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mapbox/mapbox-gl-directions.git"
+    "url": "https://github.com/aic-develop/vietmap-gl-directions.git"
   },
   "keywords": [
     "directions",
@@ -30,12 +30,12 @@
     "osm",
     "gl"
   ],
-  "author": "Mapbox",
+  "author": "VietMap",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/mapbox-gl-directions/issues"
+    "url": "https://github.com/aic-develop/vietmap-gl-directions/issues"
   },
-  "homepage": "https://github.com/mapbox/mapbox-gl-directions#readme",
+  "homepage": "https://github.com/aic-develop/vietmap-gl-directions#readme",
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.0.5",
