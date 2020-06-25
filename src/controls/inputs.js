@@ -110,6 +110,14 @@ export default class Inputs {
       .querySelector('.js-reverse-inputs')
       .addEventListener('click', () => {
         const { origin, destination } = this.store.getState();
+
+        let elementOriginSearch = document.getElementById('mapbox-directions-origin-input')
+        let elementDestinationSearch = document.getElementById('mapbox-directions-destination-input')
+
+        let t = elementOriginSearch.firstElementChild.getElementsByTagName('input')[0].value
+        elementOriginSearch.firstElementChild.getElementsByTagName('input')[0].value = elementDestinationSearch.firstElementChild.getElementsByTagName('input')[0].value
+        elementDestinationSearch.firstElementChild.getElementsByTagName('input')[0].value = t
+
         if (origin) this.actions.queryDestination(origin.geometry.coordinates);
         if (destination) this.actions.queryOrigin(destination.geometry.coordinates);
         reverse();
