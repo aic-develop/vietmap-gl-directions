@@ -53,7 +53,7 @@
     "tap-status": "^1.0.1",
     "tape": "^4.6.0",
     "transform-loader": "0.2.3",
-    "webpack": "1.13.1",
+    "webpack": "5.94.0",
     "webworkify-webpack": "1.1.7"
   },
   "dependencies": {
